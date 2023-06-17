@@ -3,13 +3,13 @@
 , fetchzip
 }:
 let
-    name = "Lakeside-2";
+    name = "Lakeside";
 in
 stdenv.mkDerivation rec {
-  pname = "lakeside-wallpaper";
+  pname = "lakeside-2-wallpaper";
   version = "2.1";
   src = fetchzip {
-    url = "https://cdn.manishk.dev/Lakeside-2.zip";
+    url = "https://cdn.manishk.dev/${name}.zip";
     sha256 = "sha256-DSG4oGOJDXFKatCL43bO93++y4pxg1Ygxt9kC3v+HvM=";
     stripRoot = false;
   };

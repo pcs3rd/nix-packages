@@ -3,14 +3,14 @@
 , fetchzip
 }:
 let
-    name = "Firewatch";
+    name = "Lakeside-2";
 in
 stdenv.mkDerivation rec {
-  pname = "firewatch-wallpaper";
+  pname = "lakeside-2-wallpaper";
   version = "2.1";
   src = fetchzip {
     url = "https://cdn.manishk.dev/${name}.zip";
-    sha256 = "sha256-GKbcn9pVfWdeC5Iw/BEhZt6NpTNjfWYzpV+Cvq5FD6o=";
+    sha256 = "sha256-DSG4oGOJDXFKatCL43bO93++y4pxg1Ygxt9kC3v+HvM=";
     stripRoot = false;
   };
   postPatch = ''
@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    description = "Firewatch GNOME dynamic wallpaper";
+    description = "Lakeside GNOME dynamic wallpaper.";
     homepage = "https://github.com/manishprivet/dynamic-gnome-wallpapers";
     license = with licenses; [ unfree ];
     platforms = platforms.linux;
