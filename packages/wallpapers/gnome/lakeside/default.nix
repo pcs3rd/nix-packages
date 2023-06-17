@@ -6,7 +6,7 @@ let
     name = "Lakeside";
 in
 stdenv.mkDerivation rec {
-  pname = "lakeside-2-wallpaper";
+  pname = "lakeside-wallpaper";
   version = "2.1";
   src = fetchzip {
     url = "https://cdn.manishk.dev/${name}.zip";
